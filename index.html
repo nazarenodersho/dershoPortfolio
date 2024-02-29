@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./img/logo.png" type="image/x-ixcon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Nazareno Dershohannetyan | Portfolio</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header visible">
+        <div class="header__content">
+            
+            <div class="header__logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <nav id="nav" class="">
+                <ul id="links" class="nav__list">
+                    <li><a href="#home" class="seleccionado" onclick="seleccion(this)">Inicio</a></li>
+                    <li><a href="#aboutMe" onclick="seleccion(this)">Sobre mi</a></li>
+                    <li><a href="#services" onclick="seleccion(this)">Servicios</a></li>
+                    <li><a href="#portfolio" onclick="seleccion(this)">Portfolio</a></li>
+                    <!-- <li><a href="#contact" onclick="seleccion(this)">Contacto</a></li> -->
+                </ul>
+            </nav>
+
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="nav__desktop">
+                <ul id="links" class="desktop__list">
+                    <li><a href="#home" class="seleccionado" onclick="seleccion(this)">Inicio</a></li>
+                    <li><a href="#aboutMe" onclick="seleccion(this)">Sobre mi</a></li>
+                    <li><a href="#services" onclick="seleccion(this)">Servicios</a></li>
+                    <li><a href="#portfolio" onclick="seleccion(this)">Portfolio</a></li>
+                    <!-- <li><a href="#contact" onclick="seleccion(this)">Contacto</a></li> -->
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="presentation">
+
+            <h1 class="presentation__title">Bienvenidos</h1>
+            <h2 class="presentation__subtitle">Soy <span>Nazareno Dershohannetyan</span>, Desarrollador Web</h2>
+            
+            <div class="img__container">
+
+                <div class="html__container slide-top">
+                    <img src="./img/html-icon.png" alt="">
+                </div>
+        
+                <div class="css__container slide-tl">
+                    <img src="./img/css-icon.png" alt="">
+                </div>
+        
+                <div class="pc__container">
+                    <img src="./img/pc-img.png" alt="">
+                </div>
+
+                <div class="square" id="square">
+                    <span class="hour" id="hour"></span>
+                </div>
+                
+                <figcaption class="figcaption">Ésta imagen no solamente tiene animaciones, sino que también la hora del teléfono está en vivo!</figcaption>
+            </div>
+
+            <p class="presentation__description">Este es mi espacio para mostrarte mi camino en el mundo del Desarrollo Web, donde describo mis habilidades, comparto mis servicios y publico mis proyectos para enseñar de que forma trabajo.</p>
+            <a href="#portfolio" class="btn__portfolio">Ir a Portfolio</a>
+
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="aboutMe">
+        <div class="about">
+            <h2 class="about__subtitle">Sobre Mi</h2>
+            <p class="about__text">Soy una persona dispuesta a aprender nuevas herramientas, tecnologías y lenguajes para crecer en el rubro, además de estar abierto a oportunidades individuales como también en equipo. Lo que puedo destacar es mi capacidad de aprender por mi cuenta de forma autodidacta, el ser responsable con mis tareas/desafíos como también priorizar la organización para llevar a cabo un trabajo de forma correcta.</p>
+        </div>
+
+        <div class="certificates">
+            <h2 class="certificates__subtitle">Certificados</h2>
+
+            <div class="certificates__container">
+                <div class="certificate">
+                    <img src="./img/desarrolloWeb-nazarenoDershohannetyan.png" alt="Certificado de Desarrollador Web">
+                </div>
+                <div class="certificate">
+                    <img src="./img/javascript-nazarenoDershohannetyan.png" alt="Certificado de JavaScript">
+                </div>
+            </div> 
+        </div>
+
+        <a href="" class="btn__cv">Descargar CV</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2 class="services__subtitle">Mis Servicios</h2>
+        <div class="services__grid">
+            <div class="services__service">
+                <img src="./img/responsive.png" alt="Logo diseños responsivos" class="service__icon">
+                <h3 class="service__tag">Diseños Responsivos</h3>
+                <p class="service__description">Desarrollo diseños responsivos que se adaptan de manera fluida a diferentes tamaños de pantalla, ya sea una computadora de escritorio, una tablet o un teléfono móvil.</p>
+            </div>
+            <div class="services__service">
+                <img src="./img/diseno-grafico.png" alt="Logo diseño gráfico" class="service__icon">
+                <h3 class="service__tag">Implementación de Diseños</h3>
+                <p class="service__description">Transformo tu diseño en código funcional, asegurando que la estética del diseño se mantenga fiel en el entorno digital.</p>
+            </div>
+            <div class="services__service">
+                <img src="./img/interactividad.png" alt="Interactivity icon" class="service__icon">
+                <h3 class="service__tag">Desarrollo de Interactividad</h3>
+                <p class="service__description">Utilizando lenguajes como JavaScript, genero experiencias para el usuario que permiten la participación del mismo en la web, yendo mas allá de una experiencia estática.</p>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2 class="portfolio__subtitle">Proyectos</h2>
+        <div class="portfolio__grid">
+            <div class="portfolio__proyect">
+                <div class="overlay"></div>
+                <img src="img/img.png" alt="">
+                <div class="proyect__info">
+                    <p class="proyect__description">Descripción del Proyecto</p>
+                    <h3 class="proyect__tag">Diseño Web</h3>
+                </div>
+            </div>
+            <div class="portfolio__proyect">
+                <div class="overlay"></div>
+                <img src="img/img.png" alt="">
+                <div class="proyect__info">
+                    <p class="proyect__description">Descripción del Proyecto</p>
+                    <h3 class="proyect__tag">Diseño Web</h3>
+                </div>
+            </div>
+            <div class="portfolio__proyect">
+                <div class="overlay"></div>
+                <img src="img/img.png" alt="">
+                <div class="proyect__info">
+                    <p class="proyect__description">Descripción del Proyecto</p>
+                    <h3 class="proyect__tag">Diseño Web</h3>
+                </div>
+            </div>
+            <div class="portfolio__proyect">
+                <div class="overlay"></div>
+                <img src="img/img.png" alt="">
+                <div class="proyect__info">
+                    <p class="proyect__description">Descripción del Proyecto</p>
+                    <h3 class="proyect__tag">Diseño Web</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__content">
+            <h3 class="footer__tag">Todos los derechos reservados - 2024</h3>
+
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__listItem">Inicio</li>
+                    <li class="footer__listItem">Sobre mi</li>
+                    <li class="footer__listItem">Servicios</li>
+                    <li class="footer__listItem">Portfolio</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- script JS -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/hour.js"></script>
+</body>
+</html>
